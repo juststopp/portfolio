@@ -1,0 +1,73 @@
+## Looking for strings? Check the i18n folder.
+
+# showcase
+showcase:
+  enable: true
+  image:
+    x: "images/about/rivrs.png"
+    _2x: "images/about/rivrs.png"
+  imageMobile:
+    x: "images/about/rivrs.png"
+
+  button:
+    icon: "icon-email"
+    URL: "mailto:malo@beaugendre.org"
+
+  socialLinks:
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/malo-beaugendre-a5aa4326a/"
+
+    - icon: "square-github"
+      URL: "https://github.com/juststopp"
+
+# about
+about:
+  enable: true
+  button:
+    icon: "icon-user"
+    URL: "https://www.linkedin.com/in/malo-beaugendre-a5aa4326a/"
+  image:
+    x: "images/about/malo-beaugendre.png"
+    _2x: "images/about/malo-beaugendre.png"
+
+# education
+education:
+  enable: true
+  items:
+    - university: "Collège Jules Lequier"
+      year: "2016-2020"
+      degree: "Diplôme national du Brevet"
+    - university: "Lycée Saint-Charles La Providence"
+      year: "2020-2023"
+      degree: "Baccalauréat Général, Option Maths & NSI"
+
+# experience
+## to hiden a button, set the icon to an empty string
+experience:
+  enable: false
+  button:
+    icon: "icon-linkedin"
+  button2:
+    icon: "icon-file-pdf"
+  button3:
+    icon: "icon-cloud-arrow-down"
+
+# Client & Work
+client_and_work:
+  enable: false
+
+# testimonial
+testimonial:
+  enable: false
+
+# contact
+contact:
+  enable: false
+  form:
+    action: "#"
+  button:
+    icon: "icon-email"
+
+# newsletter
+newsletter:
+  enable: false

@@ -1,0 +1,149 @@
+## Header
+- id: "logo_text1"
+  translation: "Cool"
+
+- id: "logo_text2"
+  translation: "Name"
+
+## Footer
+- id: "footer_notice"
+  translation: "© Adritian. Free Hugo theme by Adrián Moreno Peña."
+
+- id: "language"
+  translation: "Language"
+
+## Homepage head title
+- id: "head_title"
+  translation: "Demo site for Adritian - a high performance hugo theme by Adrián Moreno"
+
+- id: "head_description"
+  translation: "This hugo theme (Adritian) is based on Bootstrap and has features that make it suitable for a personal site, a portfolio or other kind of Single Page Applications."
+
+## Homepage showcase
+- id: "showcase_title"
+  translation: "Bonjour, je suis Malo"
+
+- id: "showcase_subtitle"
+  translation: "À propos de moi"
+
+- id: "showcase_description"
+  translation: "Passionné par la cybersécurité et le développement informatique, je m'épanouis dans la création de nouveaux projets innovants tout en explorant leur sécurité.<br />Je suis également un grand passionné de <b>sport automobile</b> et de tennis."
+
+- id: "showcase_button"
+  translation: "Me contacter"
+
+  ## not visible but used for accessibility
+- id: "showcase_image_alt"
+  translation: "A picture of Cool Name"
+
+## Homepage about
+- id: "about_title"
+  translation: "Mon entreprise"
+
+- id: "about_content"
+  translation:  <p class="lead">
+        Je suis actuellement en alternance chez <b>Rivrs</b>.
+      </p>
+      <p class="lead">
+        <b>Rivrs</b> est une entreprise <b>Rennaise</b> de création de jeux <u>UGC</u> (User-Generated Content) dans des jeux vidéos tels
+        que Minecraft, Roblox, ainsi que GTA V.
+      </p>
+      <p class="lead">
+        Mon travail consiste à développer en <b>Lua</b> des outils internes à l'entreprise dans l'objectif de simplifier la création de nos futurs jeux sur la plateforme <b>Roblox</b>.
+      </p>
+
+- id: "about_button"
+  translation: "About Me"
+
+## Homepage education
+- id: "education_title"
+  translation: "Éducation"
+
+## Homepage experience
+- id: "experience_title"
+  translation: "Experience"
+
+- id: "experience_description"
+  translation: "This is where you can highlight a bit over your experience. Years of total experience, specialization, etc."
+
+- id: "experience_button"
+  translation: "LinkedIn" 
+
+- id: "experience_button_url"
+  translation: "https://www.linkedin.com/in/adrianmoreno/"
+
+- id: "experience_button2"
+  translation: "Télécharger mon CV"
+
+- id: "experience_button2_url"
+  translation: "/img/general/cv.pdf"
+
+- id: "experience_button3"
+  translation: "View all"
+
+- id: "experience_button3_url"
+  translation: "/experience"
+
+## Homepage client & work
+- id: "client_work_title"
+  translation: "Clients & Work"
+
+## Homepage newsletter
+- id: "newsletter_title"
+  translation: "Newsletter"
+
+- id: "newsletter_button"
+  translation: "Subscribe"
+
+- id: "newsletter_placeholder"
+  translation: "Your email"
+
+- id: "newsletter_success_message"
+  translation: "Thank you for subscribing to my newsletter!"
+
+- id: "newsletter_error_message"
+  translation: "An error occurred. Please try again."
+
+- id: "newsletter_note"
+  translation: "We'll never share your email with anyone else."
+
+## Homepage testimonials
+- id: "testimonials_title"
+  translation: "Testimonials"
+
+## Homepage contact
+- id: "contact_title"
+  translation: "Contact"
+
+- id: "contact_button"
+  translation: "Envoyer un message"
+
+- id: "contact_form_name"
+  translation: "Nom"
+
+- id: "contact_form_email"
+  translation: "Adresse Email"
+
+- id: "contact_form_message"
+  translation: "Ecrivez votre message ici"
+
+- id: "contact_phone_title"
+  translation: "Téléphone"
+
+- id: "contact_phone_number"
+  translation: "+33 7 68 30 08 38"
+
+- id: "contact_email_title"
+  translation: "Email"
+
+- id: "contact_email_email"
+  translation: '<a href="mailto:malo@beaugendre.org">malo@beaugendre.org</a>'
+
+- id: "contact_address_title"
+  translation: "Adresse"
+
+- id: "contact_address_address"
+  translation: "37 Boulevard Marbeuf"
+
+- id: "contact_button"
+  translation: "Send Message"
