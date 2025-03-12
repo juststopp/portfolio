@@ -2,25 +2,23 @@
 import '../styles/global.scss';
 
 // Base domain URL without trailing slash
-const domainBaseURL = 'https://devidev.io';
-const ogImageUrl    = 'https://devidev.io/img/meta.png';
+const domainBaseURL = 'https://malo.beaugendre.org';
 
 // Website publisher & region
-const authorPublisher   = 'Dejan Vi.';
-const geoRegion         = 'DE-BY';
+const authorPublisher   = 'Malo Beaugenre.';
+const geoRegion         = 'FR-FR';
 
 // SEO title, description and keywords
-const seoTitle          = 'devi|dev|io | Dejan Vi. | Full Stack Developer';
-const seoDescription    = 'Passionate web developer focused on creating clean, efficient, and scalable web applications with a modern tech stack. Specialized in Angular, TypeScript, and Supabase.';
-const seoKeywords       = 'Full Stack Developer, Dejan Vi, Munich, Papersend, Qivi, TECHPOINT, Angular, Typescript, Supabase';
+const seoTitle          = 'Malo Beaugendre | Portfolio';
+const seoDescription    = 'PPassionné par la création d\'outils et de services, je suis un développeur qui aime apprendre et partager mes connaissances.';
+const seoKeywords       = 'Lua, Developer, Cybersecurity';
 
 // Twitter card data
 const twitter = {
     title:          seoTitle,
     description:    seoDescription,
-    image:          ogImageUrl,
-    site:           '@devidev_io',
-    creator:        '@devidev_io'
+    site:           '@juststopp',
+    creator:        '@juststopp'
 };
 
 // Open graph data
@@ -28,15 +26,14 @@ const openGraph = {
     title:          seoTitle,
     description:    seoDescription,
     url:            domainBaseURL,
-    image:          ogImageUrl,
     type:           'website',
     locale:         'en_US',
-    siteName:       'devi|dev|io'
+    siteName:       'Malo Beaugendre'
 };
 
 // Dublin core
 const dublinCore = {
-    title:          'devi|dev|io',
+    title:          'Malo Beaugendre',
     creator:        authorPublisher,
     publisher:      authorPublisher,
     rights:         authorPublisher,
@@ -95,7 +92,6 @@ const dublinCore = {
         <meta property="og:description"         content={openGraph.description}>
         <meta property="og:url"                 content={openGraph.url}>
         <meta property="og:type"                content={openGraph.type}>
-        <meta property="og:image"               content={openGraph.image}>
         <meta property="og:locale"              content={openGraph.locale}>
         <meta property="og:site_name"           content={openGraph.siteName}>
         <!-- End: Facebook open graph -->
@@ -104,7 +100,6 @@ const dublinCore = {
         <meta name="twitter:card"               content="summary_large_image">
         <meta name="twitter:title"              content={twitter.title}>
         <meta name="twitter:description"        content={twitter.description}>
-        <meta name="twitter:image"              content={twitter.image}>
         <meta name="twitter:site"               content={twitter.site}>
         <meta name="twitter:creator"            content={twitter.creator}>
         <!-- End: Twitter card -->
