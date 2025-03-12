@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 
 import tailwind from '@astrojs/tailwind';
 import compress from 'astro-compress';
@@ -8,6 +8,10 @@ export default defineConfig({
     output: 'static',
     trailingSlash: 'always',
     site: 'https://malo.beaugendre.org',
+
+    image: {
+        service: passthroughImageService(),
+    },
 
     // Single page, no prefetch needed
     prefetch: false,
