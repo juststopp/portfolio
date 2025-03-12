@@ -5,83 +5,96 @@ const code = `interface Developer {
     name: string;
     skills: string[];
     interests: string[];
+    education: Education;
 };
 
 interface TechStack {
-    devOps: string[];
+     devOps: string[];
     backend: string[];
-   frontend: string[];
+    frontend: string[];
 };
 
-type ContactType = 'github' | 'twitter' | 'linkedIn' | 'xing' | 'email';
+interface Education {
+    degree: string;
+    school: string;
+    company: string;
+    location: string;
+}
+
+type ContactType = 'github' | 'linkedIn' | 'email';
 
 const techStack: TechStack = {
     devOps: [
-        'GitLab',
         'GitHub',
-        'Cloudflare',
-        'Docker'
+        'Docker',
+        'CI/CD'
     ],
     frontend: [
-        'Angular',
+        'Lua',
+        'Python'
+        'React',
         'JavaScript',
         'TypeScript',
-        'TailwindCSS',
-        'PrimeNG',
-        'Astro',
-        'Ionic',
-        'Stencil',
-        'Capacitor',
-        'SCSS',
-        'Markdown',
-        'WordPress'
+        'Responsive Design'
     ],
     backend: [
-        'Supabase',
         'Node.js',
-        'Bun',
-        'Deno',
-        'PostgreSQL',
+        'PHP',
         'MySQL',
-        'S3 Storage',
-        'Resend'
+        'PostgreSQL',
+        'API RESTful',
+        'Python'
     ]
 };
 
-// Developer profile
 const me: Developer = {
-    name: 'Dejan Vi.',
+    name: 'Votre Nom',
     skills: [
         ...techStack.devOps,
         ...techStack.backend,
-        ...techStack.frontend
+        ...techStack.frontend,
+        'Lua/Roblox',
+        'Analyse de Vulnérabilités',
+        'Tests d\'Intrusion',
+        'Sécurité Informatique'
     ],
     interests: [
         'Open Source',
-        'Security',
-        'Privacy',
-        'Performance',
-        'Self-Hosting',
-        'Networking'
-    ]
+        'Cybersécurité',
+        'Développement de Jeux',
+        'Programmation Système',
+        'Automatisation',
+        'Rétro-ingénierie'
+    ],
+    education: {
+        degree: 'BTS SIO (Services Informatiques aux Organisations)',
+        school: 'ESNA',
+        company: 'Rivrs',
+        location: 'Rennes'
+    }
 };
 
-// Contact function
 const contact = (type: ContactType): string => {
     switch (type) {
         case 'github':
-            return 'https://github.com/devidevio';
-        case 'twitter':
-            return 'https://x.com/devidev_io';
+            return 'https://github.com/juststopp';
         case 'linkedIn':
-            return 'https://www.linkedin.com/in/dejan-vi';
-        case 'xing':
-            return 'https://www.xing.com/profile/Dejan_Vintonjiv';
+            return 'https://www.linkedin.com/in/malo-beaugendre-a5aa4326a/';
         case 'email':
-            return 'hi@devidev.io';
+            return 'malo@beaugenge.org';
         default:
-            return 'Send fax.';
+            return 'Envoyez-moi un fax.';
     }
+};
+
+const displayEducation = (): string => {
+    return \`
+    Formation: \${me.education.degree}
+    École: \${me.education.school}
+    Entreprise: \${me.education.company}
+    Localisation: \${me.education.location}
+    Diplôme précédent: Baccalauréat général, spécialités Maths et NSI
+    \`;
 };
 
 `;

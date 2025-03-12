@@ -7,10 +7,16 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
     output: 'static',
     trailingSlash: 'always',
-    site: 'https://devidev.io',
+    site: 'https://malo.beaugendre.org',
 
     // Single page, no prefetch needed
     prefetch: false,
+
+    markdown: {
+        shikiConfig: {
+            theme: 'catppuccin-mocha'
+        }
+    },
 
     integrations: [
         tailwind(),

@@ -5,8 +5,10 @@ import Profile from '../components/Profile.astro';
 import Contact from '../components/Contact.astro';
 
 import ContentLink from '../components/ContentLink.astro';
-import ContentCode from '../components/ContentAbout.astro';
-import ContentProjects from '../components/ContentProjects.astro';
+import ContentAbout from '../components/ContentAbout.astro';
+
+import { Content as E4Content } from '../content/e4.md';
+import { Content as E5Content } from '../content/e5.md';
 ---
 
 <Layout>
@@ -48,6 +50,13 @@ import ContentProjects from '../components/ContentProjects.astro';
                         class="tab-radio"
                     />
 
+                    <input
+                        type="radio"
+                        id="tab3"
+                        name="tabs"
+                        class="tab-radio"
+                    />
+
                     <!-- Start: Tab bar -->
                     <div class="flex bg-black border-b border-gray-600 sticky top-0 z-10">
 
@@ -58,7 +67,12 @@ import ContentProjects from '../components/ContentProjects.astro';
 
                         <ContentLink
                             contentId="tab2"
-                            contentName="projects.md"
+                            contentName="e4.md"
+                        />
+
+                        <ContentLink
+                            contentId="tab3"
+                            contentName="e5.md"
                         />
 
                     </div>
@@ -69,15 +83,19 @@ import ContentProjects from '../components/ContentProjects.astro';
 
                         <!-- Start: About content -->
                         <div id="content1" class="tab-content">
-                            <ContentCode />
+                            <ContentAbout />
                         </div>
                         <!-- End: About content -->
 
                         <!-- Start: Projects content -->
                         <div id="content2" class="tab-content">
-                            <ContentProjects />
+                            <E4Content />
                         </div>
                         <!-- End: Projects content -->
+
+                        <div id="content3" class="tab-content">
+                            <E5Content />
+                        </div>
 
                     </div>
                     <!-- End: Tab content -->
@@ -134,6 +152,14 @@ import ContentProjects from '../components/ContentProjects.astro';
     }
 
     #tab2:checked ~ .flex .tab-link:nth-child(2) {
+        @apply border-b-2 border-b-primary;
+    }
+
+    #tab3:checked ~ * #content3 {
+        @apply block opacity-100;
+    }
+
+    #tab3:checked ~ .flex .tab-link:nth-child(3) {
         @apply border-b-2 border-b-primary;
     }
 
