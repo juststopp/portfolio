@@ -2,7 +2,7 @@
 import SocialIcon from './SocialIcon.astro';
 
 interface Social {
-    icon: 'github' | 'linkedIn' | 'email' | 'cv';
+    icon: 'github' | 'linkedIn' | 'email' | 'cv' | 'root-me';
     link: string;
     download: boolean;
     title?: string;
@@ -22,6 +22,11 @@ const socials: Social[] = [{
     icon: 'email',
     link: 'mailto:malo@beaugendre.org',
     title: 'Send Email',
+    download: false
+}, {
+    icon: 'root-me',
+    link: 'https://www.root-me.org/JustStop__-896700',
+    title: 'Profile RootMe',
     download: false
 }, {
     icon: 'cv',

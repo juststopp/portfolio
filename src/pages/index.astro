@@ -9,6 +9,8 @@ import ContentAbout from '../components/ContentAbout.astro';
 
 import { Content as E4Content } from '../content/e4.md';
 import { Content as E5Content } from '../content/e5.md';
+
+import Asmarss from 'asmarss';
 ---
 
 <Layout>
@@ -57,6 +59,13 @@ import { Content as E5Content } from '../content/e5.md';
                         class="tab-radio"
                     />
 
+                    <input
+                        type="radio"
+                        id="tab4"
+                        name="tabs"
+                        class="tab-radio"
+                    />
+
                     <!-- Start: Tab bar -->
                     <div class="flex bg-black border-b border-gray-600 sticky top-0 z-10">
 
@@ -67,11 +76,16 @@ import { Content as E5Content } from '../content/e5.md';
 
                         <ContentLink
                             contentId="tab2"
-                            contentName="e4.md"
+                            contentName="veille.rss"
                         />
 
                         <ContentLink
                             contentId="tab3"
+                            contentName="e4.md"
+                        />
+
+                        <ContentLink
+                            contentId="tab4"
                             contentName="e5.md"
                         />
 
@@ -87,13 +101,25 @@ import { Content as E5Content } from '../content/e5.md';
                         </div>
                         <!-- End: About content -->
 
-                        <!-- Start: Projects content -->
                         <div id="content2" class="tab-content">
+                            <Asmarss url={"https://www.cert.ssi.gouv.fr/feed/"} classList={{
+                                toot__header__date: "text-gray-400",
+
+                                separator: "rss",
+
+                                toot__footer: "rss_see_more",
+                                see_more: "hidden",
+                            }}
+                            seperator={true} />
+                        </div>
+
+                        <!-- Start: Projects content -->
+                        <div id="content3" class="tab-content">
                             <E4Content />
                         </div>
                         <!-- End: Projects content -->
 
-                        <div id="content3" class="tab-content">
+                        <div id="content4" class="tab-content">
                             <E5Content />
                         </div>
 
@@ -163,4 +189,29 @@ import { Content as E5Content } from '../content/e5.md';
         @apply border-b-2 border-b-primary;
     }
 
+    #tab4:checked ~ * #content4 {
+        @apply block opacity-100;
+    }
+
+    #tab4:checked ~ .flex .tab-link:nth-child(4) {
+        @apply border-b-2 border-b-primary;
+    }
+
+    .rss_see_more {
+        text-align: end;
+    }
+
+    .rss_see_more a:hover {
+        @apply border-b-2 border-b-primary;
+    }
+
 </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const links = document.querySelectorAll('.rss_see_more a');
+        links.forEach(link => {
+            link.textContent = "Voir plus";
+        });
+    });
+</script>
