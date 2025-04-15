@@ -3,8 +3,6 @@ import { defineConfig, passthroughImageService } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import compress from 'astro-compress';
 import sitemap from '@astrojs/sitemap';
-import mdx from '@astrojs/mdx';
-import react from '@astrojs/react';
 
 export default defineConfig({
     output: 'static',
@@ -27,8 +25,6 @@ export default defineConfig({
     integrations: [
         tailwind(),
         sitemap(),
-        mdx(),
-        react(),
         compress({
             CSS: true,
             SVG: false,
