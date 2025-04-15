@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "@astrojs/mdx": "^4.2.4",
+        "@astrojs/react": "^4.2.4",
         "asmarss": "^0.1.1",
         "astro": "^5.4.2",
         "shiki": "^3.1.0",
