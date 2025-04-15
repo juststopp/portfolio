@@ -1,28 +1,12 @@
 ---
 title: 'Épreuve E5'
 author: 'JustStop__'
+---
 
 import ContentProjects from '../components/ContentProjects.astro'
-
-const projects = [
-    {
-        name: "Tableau de réalisations professionnelles",
-        description: "Annexe 8-1 contenant le tableau de mes réalisations professionnelles.",
-        link: {
-            url: "https://drive.google.com/file/d/1g0r7vX2x4qk3b5j6f8z5c5e5e5e5e5e/view?usp=share_link",
-            title: "Tableau de réalisations professionnelles",
-            buttonLabel: "Télécharger le tableau"
-        }
-    }
-]
----
 
 # {frontmatter.title}
 
 <br />
 
---- 
-
-<br />
-
-<ContentProjects projects={projects} />
+<ContentProjects projects={Astro.props.projects} />

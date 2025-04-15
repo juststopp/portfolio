@@ -11,6 +11,19 @@ import { Content as E5Content } from '../content/e5.mdx';
 import { Content as E6Content } from '../content/e6.mdx';
 
 import Asmarss from 'asmarss';
+
+const projects = [
+    {
+        name: "Tableau de réalisations professionnelles",
+        description: "Annexe 8-1 contenant le tableau de mes réalisations professionnelles.",
+        link: {
+            url: "https://drive.google.com/file/d/1g0r7vX2x4qk3b5j6f8z5c5e5e5e5e5e/view?usp=share_link",
+            title: "Tableau de réalisations professionnelles",
+            buttonLabel: "Télécharger le tableau"
+        }
+    }
+]
+
 ---
 
 <Layout>
@@ -115,7 +128,7 @@ import Asmarss from 'asmarss';
 
                         <!-- Start: Projects content -->
                         <div id="content3" class="tab-content">
-                            <E5Content />
+                            <E5Content projects={projects}/>
                         </div>
                         <!-- End: Projects content -->
 
