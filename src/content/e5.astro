@@ -1,0 +1,25 @@
+---
+import ContentProjects from '../components/ContentProjects.astro';
+
+const projects = [
+    {
+        name: "Tableau de réalisations professionnelles",
+        description: "Annexe 8-1 contenant le tableau de mes réalisations professionnelles.",
+        link: {
+            url: "https://drive.google.com/file/d/1pqOuzYJ_W5wa9BrWUFJO-raaUqqL9cbx/view?usp=share_link",
+            title: "Tableau de réalisations professionnelles",
+            buttonLabel: "Télécharger le tableau"
+        }
+    }
+]
+---
+
+<section>
+  <h1>Épreuve E5</h1>
+
+  <br />
+  <hr />
+  <br />
+
+  <ContentProjects projects={projects} />
+</section>

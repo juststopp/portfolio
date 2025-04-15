@@ -1,0 +1,25 @@
+---
+import ContentProjects from '../components/ContentProjects.astro';
+
+const projects = [
+    {
+        name: "Site de gestion d'une bibliothèque",
+        description: "Site de gestion d'une bibliothèque avec un système de gestion de prêts et de résarvation de salles d'étude.",
+        link: {
+            url: "https://github.com/projet-bts-bibliotheque",
+            title: "GitHub",
+            buttonLabel: "GitHub de l'organization."
+        }
+    }
+]
+---
+
+<section>
+  <h1>Épreuve E6</h1>
+
+  <br />
+  <hr />
+  <br />
+
+  <ContentProjects projects={projects} />
+</section>
