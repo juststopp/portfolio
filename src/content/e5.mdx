@@ -3,9 +3,21 @@ title: 'Épreuve E5'
 author: 'JustStop__'
 ---
 
-export const title = "Épreuve E5";
+import ContentProjects from '../components/ContentProjects.astro'
 
-# {title} - {frontmatter.author}
+const projects = [
+    {
+        name: "Tableau de réalisations professionnelles",
+        description: "Annexe 8-1 contenant le tableau de mes réalisations professionnelles.",
+        link: {
+            url: "https://drive.google.com/file/d/1g0r7vX2x4qk3b5j6f8z5c5e5e5e5e5e/view?usp=share_link",
+            title: "Tableau de réalisations professionnelles",
+            buttonLabel: "Télécharger le tableau"
+        }
+    }
+]
+
+# {frontmatter.title}
 
 <br />
 
@@ -13,6 +25,4 @@ export const title = "Épreuve E5";
 
 <br />
 
-<iframe src="https://drive.google.com/file/d/1pqOuzYJ_W5wa9BrWUFJO-raaUqqL9cbx/view?usp=share_link" width="100%" height="600px">
-  Ce navigateur ne supporte pas l'affichage des PDF. Vous pouvez le télécharger [ici](https://drive.google.com/file/d/1pqOuzYJ_W5wa9BrWUFJO-raaUqqL9cbx/view?usp=share_link).
-</iframe>
+<ContentProjects projects={projects} />

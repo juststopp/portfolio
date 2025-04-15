@@ -10,8 +10,8 @@ interface Project {
     };
 };
 
-const projects: Project[] = [];
----
+const projects: Project[] = Astro.props?.projects;
+--- 
 
 <div>
 
