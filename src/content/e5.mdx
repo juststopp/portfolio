@@ -1,12 +1,8 @@
----
-title: 'Épreuve E5'
-author: 'JustStop__'
----
-
-import ContentProjects from '../components/ContentProjects.astro'
-
-# {frontmatter.title}
-
-<br />
-
-<ContentProjects projects={Astro.props.projects} />
+export default function MDXContent({ projects }) {
+  return (
+    <>
+      <h1>Épreuve E5</h1>
+      <ContentProjects projects={projects} />
+    </>
+  );
+}
