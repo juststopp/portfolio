@@ -1,4 +1,5 @@
 ---
+import { build } from 'astro';
 import ContentProjects from '../components/ContentProjects.astro';
 
 const projects = [
@@ -10,12 +11,48 @@ const projects = [
             title: "GitHub",
             buttonLabel: "GitHub de l'organization."
         }
+    },
+    {
+        name: "Création d'un jeu Roblox",
+        description: "Création d'un jeu de type simulateur sur la plateforme Roblox dans le cadre d'un projet au sein de mon entreprise.",
+        link: { 
+            url: "https://www.roblox.com/games/139764066289660/Become-a-Sniper-Simulator",
+            title: "Roblox",
+            buttonLabel: "Lien du jeu"
+        }
+    },
+    {
+        name: "Mise en place d'un gestionnaire de paquets",
+        description: "Mise en place en interne d'un gestionnaire de paquets existant (wally.run) pour la gestion des dépendances de projets Roblox.",
+        link: {
+            url: "https://github.com/Rivrs-Roblox/wally",
+            title: "GitHub",
+            buttonLabel: "GitHub du projet"
+        }
+    },
+    {
+        name: "Création d'un site web de gestio de clés API",
+        description: "Création d'un site web permettant de gérer aux managers de gérer les clés API du gestionnaire de paquets Wally.",
+        link: {
+            url: "https://api-key-website-853231632222.europe-west2.run.app",
+            title: "WebSite",
+            buttonLabel: "Site Web"
+        }
+    },
+    {
+        name: "Création de dépendances pour Roblox",
+        description: "Création de dépendances pour Roblox permettant d'ajouter des fonctionnalités supplémentaires aux jeux Roblox.",
+        link: {
+            url: "https://github.com/Rivrs-Roblox/wally-index",
+            title: "GitHub",
+            buttonLabel: "GitHub des dépendances"
+        }
     }
 ]
 ---
 
 <section>
-  <h1>Épreuve E6</h1>
+  <h1>Projets</h1>
 
   <br />
   <hr />
