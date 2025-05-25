@@ -5,7 +5,7 @@ import compress from 'astro-compress';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-    output: 'static',
+    output: 'server',
     trailingSlash: 'always',
     site: 'https://malo.beaugendre.org',
 
